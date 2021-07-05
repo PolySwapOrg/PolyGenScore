@@ -5,7 +5,6 @@ import "./DoughnutChart.css";
 const DoughnutChart = (props) => {
 
   const [result, setResult] = React.useState(props.scores);
-  const [p, setp] = React.useState([]);
   const [labellist, setLabelList] = React.useState([]);
     const [scorelist, setScoreList] = React.useState([]);
   const tdef={};
@@ -85,8 +84,7 @@ console.log("tdef", tdef);
           <h4>Total: {props.sum}</h4>
         </span>
         <div className="DoughnutChart-container-1">
-
-          <Doughnut data={data} options={options} height={'130px'}/>
+          <Doughnut type="polarArea" data={data} options={options} height={'130px'}/>
         </div>
       </div>
     </div>

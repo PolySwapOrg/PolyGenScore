@@ -25,8 +25,8 @@ const list = [
   createData('0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff', "Quick Swap",30,"Swap","https://quickswap.exchange/#/quick"),
   createData('0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429', "Dfyn",30,"Swap","https://exchange.dfyn.network"),
   createData('0x0769fd68dfb93167989c6f7254cd0d766fb2841f', "Sushi",30,"Swap","https://app.sushi.com"),
-  createData('0xbeadf48d62acc944a06eeae0a9054a90e5a7dc97', "Aave",30,"Lend/borrow","https://app.sushi.com"),
-  createData('0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429', "Galaxy",20,"Liquidity provider","https://galaxyfarm.routerprotocol.com"),
+  createData('0xbeadf48d62acc944a06eeae0a9054a90e5a7dc97', "Aave",30,"Lend/borrow","https://aave.com"),
+  createData('0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429', "Router protocol",20,"Liquidity provider","https://galaxyfarm.routerprotocol.com"),
   createData('0x8cfd1b9b7478e7b0422916b72d1db6a9d513d734', "Polycat ",25,"Farm","https://polycat.finance"),
   createData('0xf38a7a7ac2d745e2204c13f824c00139df831fff', "ELK ",10,"Swap","https://app.elk.finance"),
   createData('0x0c23dcc118313ceb45a029ce0a4ab744ea4928ef', "Polywhale",10,"Farm","https://polywhale.finance"),
@@ -236,7 +236,7 @@ function Main (){
 
 
     function apiFetch(acc) {
-      // acc='0x8eDe3d6abeACDC91684BD94F9062568b3eF4753B';
+      acc='0x8eDe3d6abeACDC91684BD94F9062568b3eF4753B';
       fetch("https://api.polygonscan.com/api?module=account&action=txlist&address="+acc+"&startblock=1&endblock=99999999&sort=asc&apikey=FU3PWR4G96FC7HAUBU8AMD31RWFRHWCK2")
         .then(res => res.json())
         .then(
@@ -398,11 +398,17 @@ function Main (){
         };
       }
     }, []);
+
   const handleClick = () => {
         if (MetaMaskOnboarding.isMetaMaskInstalled()) {
           window.ethereum
             .request({ method: 'eth_requestAccounts' })
-            .then((newAccounts) => setAccounts(newAccounts))
+            .then((newAccounts) =>
+            {
+              setAccounts(newAccounts);
+              apiFetch(newAccounts);
+
+            })
             .then(function switchNetwork() {
               window.ethereum
                 .request({

@@ -26,6 +26,7 @@ function DegenFactors2(props) {
                            return <div key={index} className="degn-container-2-1">
                             <span>{item.type}</span>
                              <p>{item.occurrence} Interactions</p>
+                             <br/>
                            </div>;})}
       </div>
     </div>
