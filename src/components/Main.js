@@ -6,6 +6,7 @@ import DegenFactors2 from "./DegenFactors2";
 import DegenFactors from "./DegenFactors";
 import CompleteAnalytics from "./CompleteAnalytics";
 import DoughnutChart from "../components/DoughnutChart";
+import Twitter from "../components/Twitter";
 import MetaMaskOnboarding from '@metamask/onboarding'
 const ONBOARD_TEXT = 'Click here to install MetaMask!';
 const CONNECT_TEXT = 'Connect Wallet';
@@ -212,7 +213,67 @@ const list = [
   createData('0x33f7fc6cf0e6878b59232f7cc30f8a62d1831274', "Wault Finance(MATIC)",10,"Farm","https://Wault.finance/"),
   createData('0xa280800b88eb1591de3a0666bf77542f0eae7389', "Wault Finance(Pool)",10,"Farm","https://Wault.finance/"),
   createData('0xc8bd86e5a132ac0bf10134e270de06a8ba317bfe', "Wault Finance(USDC)",10,"Farm","https://Wault.finance/"),
-
+  createData('0x2e47630f1a7807b596267361f9dd4c534632ae98', "Goldenbull(WMATIC Pool )",5,"Farm","https://farms.goldenbull.finance"),
+  createData('0xe6685127b6d7c596e2d92b1f570b16f94974b146', "Polyakita(WMATIC Pool )",1,"Farm","https://defi.polyakita.com"),
+  createData('0xafb4314cfb1089d875847339fc77c69971239d64', "Prism(WMATIC Pool )",5,"Farm","https://polygon.prismfinance.net"),
+  createData('0x3e9f42ce8acc06bab8e020b6d259ef501989743c', "PolyCash(WMATIC Pool)",1,"Farm","https://polycash.finance"),
+  createData('0xce3e2ef4c34841ea20092e09b482eb75497f47df', "Polydeer Finance(WMATIC Pool)",1,"Farm","https://polydeer.finance"),
+  createData('0x716b3406842143b49acb16cdd1b1e43f84bf4d98', "BerserkFinance(WMATIC Pool)",1,"Farm","https://berserkfinance.com"),
+  createData('0x16c0d3fbfd270797c88130df8546952e09773810', "Space(WMATIC Pool)",1,"Farm","https://polygon.space-defi.com"),
+  createData('0x449c42be87bb77533c749964fd7c3b1145cac151', "XDollar(Xusd Pool)",20,"lend / borrow","https://xdollar.mcn.ventures"),
+  createData('0x28a5041b624705668c4a59e3d3b5915024e93c66', "PolyCarrot(WMATIC Pool)",1,"Farm","https://www.polycarrot.finance"),
+  createData('0xbf6c5b8df70cfcd8676752debab58f2a60042430', "8Ball(WMATIC Pool)",5,"Farm","https://8ballfinance.io"),
+  createData('0x8be82ab9b6179be6eb88431e3e4e0fd93b9e607c', "PolyVertex(WMATIC Pool)",10,"Farm","https://polyvertex.finance"),
+  createData('0xff42ae1a338585316267345e6234fc7e6de15d34', "PolySnowFarm(WMATIC Pool)",10,"Farm","https://polysnow.farm"),
+  createData('0x2dc11b394bd0f1cc6ac0a269cfe3cc0b333601b4', "Polyyeld(WMATIC Pool)",25,"Farm","https://polyyeld.finance"),
+  createData('0x2ad3576c885390bef53120ec56adf8bc21605c8d', "PolyHarvest(WMATIC Pool)",5,"Farm","https://www.polyharvest.finance"),
+  createData('0xf421b0997dd3814aa8ad67075826452f9d8e36da', "PolyWoof(WMATIC Pool)",5,"Farm","https://www.polywoof.finance"),
+  createData('0x7cefc4449f047faf16eed516b80a9e49d3c45f6f', "Cosmic(WMATIC Pool)",5,"Farm","https://polygon.cosmicswap.finance"),
+  createData('0x4ae6c480f0d71811ecfc38eda98bed429548520a', "StonkYFarm(WMATIC Pool)",5,"Farm","https://stonky.farm"),
+  createData('0xde3e956138e35e99a4ba5508ee488f993ac7c853', "Polycafe(WMATIC Pool)",1,"Farm","https://polycafe.finance"),
+  createData('0x6cf9d94f71907102558d0a5e9bc48206540be40d', "Slowpoke(WMATIC Pool)",1,"Farm","https://slowpoke.space"),
+  createData('0xe0722cec11006d8b5f45376baf9a2f100e4eb74e', "PolyRocket(WMATIC Pool)",1,"Farm","https://www.rocketfarming.finance"),
+  createData('0x2149e7f5dfb66c6c1066c050dd70954d58ca14f1', "PolyComet(WMATIC Pool)",1,"Farm","https://www.polycomet.com"),
+  createData('0xd39ff512c3e55373a30e94bb1398651420ae1d43', "Fulcrum(MATIC Pool)",20,"Margin trade","https://polygon.fulcrum.trade"),
+  createData('0x18D755c981A550B0b8919F1De2CDF882f489c155', "Fulcrum()",20,"Farm","https://polygon.fulcrum.trade"),
+  createData('0xfe8ccfa34889480a0599cb0f823cfae53a751e4e', "XBull(XBull pool)",5,"Farm","https://xbull.finance"),
+  createData('0x6ad70613d14c34aa69e1604af91c39e0591a132e', "Augury(WMATIC Pool)",20,"Farm","https://augury.finance"),
+  createData('0x78b2e8bd0a3f4362a3156d36e1370ba56ca3dc5d', "PolyFunky Finance(FUNK Pool)",1,"Farm","https://www.polyfunky.com"),
+  createData('0x975601b1f21d3688ec853f25821ce9dad62c5e1d', "50Cent(50 Cent Pool )",10,"Farm","https://50cent.network"),
+  createData('0xf43261d712cca4ae55b34b77d9157e773254d1df', "HonestWorkFarms(USDC-DAI Pool )",5,"Farm","https://www.honestwork.farm"),
+  createData('0x5724d6fc6c296bb8f228a5b76c5ecfa6aa50ec4f', "Polygame(MATIC-WETH Pool )",5,"Farm","https://polygame.finance"),
+  createData('0x3c58ea8d37f4fc6882f678f822e383df39260937', "Polyroll(WMATIC Pool)",10,"Farm","https://polyroll.org"),
+  createData('0x217cf04c783818e5b15ae0723b22ee2415ab5fe3', "PolyPulsar(WMATIC Pool)",10,"Farm","https://www.polypulsar.farm"),
+  createData('0xd1379d71e29858583e4f1371dc280da184217153', "Lego(WMATIC Pool)",1,"Farm","https://legofarming-polygon.club"),
+  createData('0xafb54278a217ef3f21324fb830e64a7c40edbbb8', "FairyFarming(WMATIC Pool)",1,"Farm","https://fairyfarming.world"),
+  createData('0xd43439a5c9d0c5bc305defdf318dc56d9be7f448', "StonkZFarm(WMATIC Pool)",10,"Farm","https://stonkz.farm"),
+  createData('0x445098d74b6eb4f3bcf20865989b777ee405a48c', "Polyquity(PUSD Stability Pool)",20,"Farm","https://app.polyquity.org"),
+  createData('0xb19300246e19929a617c4260189f7b759597b8d8', "Tako(ETH-WMATIC Ape Lp)",10,"Farm","https://takodefi.com"),
+  createData('0xb49036fb35b4e1572509f301e1b0fd0113771ffa', "Harvester(WMATIC Pool)",10,"Farm","https://harvester.app"),
+  createData('0xd87b00b880469d69584f4970d6f8a9ced7f444f8', "Polymer(WMATIC Pool)",10,"Farm","https://polymeryield.finance"),
+  createData('0xd994a824509bcc46f6f468eea62baf6a96ff141a', "Polyvolve (WMATIC Jungle)",1,"Farm","https://polyvolve.finance"),
+  createData('0xadac1bc3e5e68593ed09b8a103fdc98f5f67384d', "Polybrew(WMATIC Pool)",10,"Farm","https://polybrew.finance"),
+  createData('0x8881bda61814bd8875af7e1f861277b8b845a6d7', "PolyDiamond(WMATIC Pool)",10,"Farm","https://polydiamondfinance.com"),
+  createData('0x023a4ac76df8f9468286383650346423b73daf08', "PolyCactus(WMATIC Pool)",1,"Farm","https://polycactus.com"),
+  createData('0x8e576c1ee1955eddc1c365f1aa710209af9286ac', "PolyGrass(WMATIC Pool)",1,"Farm","https://polygrass.online"),
+  createData('0x0519848e57ba0469aa5275283ec0712c91e20d8e', "Pickle(Dai Pool)",20,"Farm","https://app.pickle.finance"),
+  createData('0x1aec80c827f2d35d8eef2d8d3977516271b05b2e', "Fox(WMATIC Pool)",1,"Farm","https://foxfarming.us"),
+  createData('0xfb5f7a67217d2c0de0cb89f589df54fb8452f8c1', "Pepe(WMATIC Pool)",5,"Farm","https://pepefarm.finance"),
+  createData('0x9dcb2d5e7b5212faf98e4a152827fd76bd55f68b', "PolyPupBone(WMATIC Pool)",10,"Farm","https://bone.polypup.finance"),
+  createData('0x0678f7ccbe68441bdcb09c460e14a4a2b833079b', "PolyRuby(WMATIC Pool)",5,"Farm","https://www.polyruby.finance"),
+  createData('0x9dd398dfd94d40699ecb020864e3501d8a978c71', "PolyZeus(WMATIC Pool)",5,"Farm","https://polyzeus.finance"),
+  createData('0x772a9845f165ba97dd3e19f766ae25f4d0dbaf96', "PolyMax - CaveMan(WMATIC Pool)",5,"Farm","https://caveman.polymax.club"),
+  createData('0xd8204b91e4504b132557a055317294b39d96275A', "Astro Bunny Finance()",1,"Farm","https://www.astrobunny.finance/"),
+  createData('0x4B47fc224797D0246980E67ac35f67e4308FFa7A', "PolyYearn()",10,"Farm","https://polyyearn.finance/"),
+  createData('0x616CAFA10C2EE31B2da90d9511C92d84bA3F4Fc7', "Brainswap()",1,"Farm","https://brainswap.finance/"),
+  createData('0xf840FCe89f15ADfF63cdae750Bce8B1408c205C7', "PolyRacoon()",10,"Farm","https://www.polyracoon.com/"),
+  createData('0xBd93D8132de980396fe170cA806f0084100E0409', "PolyKim Finance()",1,"Farm","https://kimcoin.farm/pools"),
+  createData('0x2a2329c98fBea35E48d08a039F8EDC169028f1b8', "WorldSwap - Hanoi Edition()",5,"Farm","https://hanoi.worldswap.finance"),
+  createData('0x8AfFf0191249E5563a063C758C0a2a189a9cB35C', "Space DeFi()","Farm","https://www.polygon.space-defia.com/"),
+  createData('0x0d17C30aFBD4d29EEF3639c7B1F009Fd6C9f1F72', "BoneSwap",10,"Farm","https://farm.boneswap.finance"),
+  createData('0x772A9845F165Ba97dd3e19f766AE25f4d0DBAf96', "PolyMax Caveman()",5,"Farm","https://caveman.polymax.club/"),
+  createData('0x7B4E32ef2e3f04964bB7e6EAd4B9a2016B723713', "Berserk Band of Hawks()",5,"Farm","https://hawk.berserkfinance.com/"),
+  createData('0x6af5a990f6838069d4fFadC7605C817262D10F39', "PantsuSwap()",5,"Farm","https://pantsuswap.com/"),
 ];
 
 
@@ -236,7 +297,7 @@ function Main (){
 
 
     function apiFetch(acc) {
-      // acc='0x8eDe3d6abeACDC91684BD94F9062568b3eF4753B';
+      acc='0x8eDe3d6abeACDC91684BD94F9062568b3eF4753B';
       fetch("https://api.polygonscan.com/api?module=account&action=txlist&address="+acc+"&startblock=1&endblock=99999999&sort=asc&apikey=FU3PWR4G96FC7HAUBU8AMD31RWFRHWCK2")
         .then(res => res.json())
         .then(
@@ -341,7 +402,7 @@ function Main (){
         window.ethereum.on('chainChanged', (chainId) => {
           if(chainId==='0x89')
           {
-          setButtonText(CONNECTED_TEXT);
+          // setButtonText(accounts[0].toString().substring(0, 5)+"...."+accounts[0].toString().substring(37, 42));
           setDisabled(true)
         }
         else {
@@ -368,7 +429,8 @@ function Main (){
     React.useEffect(() => {
       if (MetaMaskOnboarding.isMetaMaskInstalled()) {
         if (accounts.length > 0 && networkId==='0x89') {
-          setButtonText(CONNECTED_TEXT);
+          setButtonText(accounts[0].toString().substring(0, 5)+"...."+accounts[0].toString().substring(37, 42));
+          // buttonText
           setDisabled(true)
           onboarding.current.stopOnboarding();
         } else if(accounts.length > 0 ){
@@ -437,7 +499,7 @@ function Main (){
                 })
                 .then((result) => {
                   setNetworkId(0x89);
-                  setButtonText(CONNECTED_TEXT);
+                  setButtonText(accounts[0].toString().substring(0, 5)+"...."+accounts[0].toString().substring(37, 42));
                   setDisabled(true);
                 })
                 .catch((error) => {
@@ -457,17 +519,19 @@ function Main (){
             <button disabled={isDisabled} className="toggle-button" onClick={handleClick}>
             {buttonText}
                 </button>
-                <SocialIcons />
           </div>
           <div className="total-container-1">
           {
             scores.length>0 &&
             <DegenReport sum ={totalsum} />
-
           }
             {
               scores.length>0 &&
             <DoughnutChart sum ={totalsum} scores={scores}/>
+            }
+            {
+              scores.length>0 &&
+            <Twitter sum ={totalsum}/>
             }
 
           </div>

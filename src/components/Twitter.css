@@ -1,0 +1,130 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|PT+Sans:400,700");
+
+
+  .date-image-container {
+    margin-left: 40rem;
+    /* background-color: lawngreen; */
+    margin-top: 10px;
+    position: absolute;
+  }
+
+  .date-pick-container {
+    display: flex;
+    /* background-color: green; */
+    width: 210px;
+    justify-content: space-between;
+    margin-top: -60px;
+    padding-left: 5px;
+  }
+
+  .button {
+    padding: 4px 30px;
+    background-color: #eee;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+
+  .form-input {
+    /* margin: 0px auto; */
+    margin-left: 20px;
+    position: relative;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+  .input {
+    border: 1px solid #ccc;
+    /* padding: 5px 10px 5px 50px; */
+    font-size: 18px;
+    line-height: 30px;
+    outline: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #F6F7FF;
+}
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    font-size: 25px;
+    color: #A4A3BA;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-1 {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #F4F4F6;
+
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  /* margin-left: -10px; */
+}
+
+.container-2 p {
+  margin-top: 0px;
+  margin-left: -45px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-2 i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.container-3 {
+  background-color: #fff;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.3rem;
+  margin-left: 15px;
+  margin-top: 20px;
+  width: 105px;
+  height: 100px;
+  position: relative;
+}
+
+.container-4 {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: lawngreen; */
+}
+
+.container-4 p {
+  margin-left: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+  font-weight: bolder;
+  width: 100px;
+  /* background-color: lemonchiffon; */
+}
+
+.container-4 p i {
+  padding-left: 5px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.container-4 img {
+  height: 25vh;
+  width: 77px;
+  position: relative;
+  margin-top: -90px;
+  cursor: pointer;
+}

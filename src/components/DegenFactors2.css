@@ -39,10 +39,15 @@
 }
 
 .degn-container-2-1 {
-    /* background-color: lightblue; */
+    /* background: url("lp.png");
+    background-size:     cover;                      /* <------ */
+    /* background-repeat:   no-repeat;
+    background-position: center center;             */
+    /* optional, center the image */
+
     /* width: 25%; */
     border-radius: 15px;
-    border: 2px solid #F0EFF3;
+    border: 5px solid #F0EFF3;
     /* display: flex;
     flex-direction: column;
     justify-content: space-evenly; */

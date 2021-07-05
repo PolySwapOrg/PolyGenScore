@@ -30,7 +30,6 @@ for (const [index, value] of result.entries()) {
     p><span>Contract Interacted : </span>{value.contract}</p>
     <p> <span>Contract Website : </span> <a href={value.website} target="_blank" rel="noopener noreferrer">{value.website}</a></p>
     <p> <span> Score gained : </span> {value.score}</p>
-    <p> <span> Type of Interaction : </span>{value.type}</p>
   </div>)
 }
     return (

@@ -3,7 +3,6 @@ import { Doughnut } from "react-chartjs-2";
 import "./DoughnutChart.css";
 
 const DoughnutChart = (props) => {
-
   const [result, setResult] = React.useState(props.scores);
   const [labellist, setLabelList] = React.useState([]);
     const [scorelist, setScoreList] = React.useState([]);
@@ -11,10 +10,10 @@ const DoughnutChart = (props) => {
 
 function sumData(tdata) {
 tdata.forEach((item) => {
-    tdef["Points Earned with : "+item.type] = 0;
+    tdef[item.type] = 0;
 });
 tdata.forEach((item) => {
-    tdef["Points Earned with : "+item.type]  =  tdef["Points Earned with : "+item.type]+item.score;
+    tdef[item.type]  =  tdef[item.type]+item.score;
 });
 setLabelList(Object.keys(tdef));
 setScoreList(Object.values(tdef));
@@ -78,7 +77,6 @@ console.log("tdef", tdef);
     <div>
       <div className="DoughnutChart-container">
         <p id="head">Total Points Earned</p>
-
         <span id="total">
           {" "}
           <h4>Total: {props.sum}</h4>
