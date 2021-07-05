@@ -1,0 +1,26 @@
+  /* SOCIAL STUFF */
+  .social-container {
+    /* background: #F6F7FF; */
+    width: 50px;
+    /* margin-left: 65%; */
+    /* margin-top: 38px; */
+    padding: 2px 0px 0px 8px;
+    border-radius: 10px;
+    /* position: absolute; */
+  }
+  a.social {
+    /* margin: 0 1rem; */
+    font-size: 15px;
+    transition: transform 250ms;
+    display: inline-block;
+    
+  }
+  
+  a.social:hover {
+    transform: translateY(2px);
+    color: #ccc;
+  }
+
+  a.twitter {
+    color: #49a1eb;
+  }

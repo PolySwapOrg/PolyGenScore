@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #EEEFF7;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  height: 100vh;
+}
+
+.first-container {
+  width: 10%;
+  height: auto;
+  background-color: #6DE576;
+}
+
+.second-container {
+  width: 65%;
+  height: auto;
+  background-color: #EEEFF7;
+}
+
+.third-container {
+  width: 25%;
+  height: auto;
+  background-color: #6147FF;
+}

@@ -1,0 +1,18 @@
+.credit-report-container {
+    width: 40vw;
+    height: 30vh;
+    position: relative;
+    /* margin-left: 30px; */
+    margin-top: 0px;
+    /* background-color: rgb(204, 32, 32); */
+}
+
+.credit-report-container h3 {
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+.arc{
+  padding-left: 100px;
+  padding-top: 30px;
+}

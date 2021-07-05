@@ -1,0 +1,39 @@
+.Analytics-container {
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.Analytics-container-head p{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.Analytics-container-bars {
+    height: auto;
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: palegreen;
+}
+
+.circle {
+	margin-top: 0.10em;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: grey;
+    border: 0.1em solid grey;
+    border-radius: 100%;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+}

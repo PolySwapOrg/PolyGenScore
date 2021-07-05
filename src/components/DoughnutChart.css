@@ -1,0 +1,41 @@
+.DoughnutChart-container {
+    width: 22vw;
+    height: 70vh;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-top: -58px;
+    position: relative;
+    /* background-color: red; */
+}
+.DoughnutChart-container-1 {
+    /* width: 50%; */
+    /* height: 375px; */
+
+}
+
+
+  #head {
+      text-align: center;
+      padding-top: 30px;
+      font-size: 17px;
+      font-weight: bolder;
+  }
+
+  #head i {
+      margin-left: 10px;
+      color: #D9D7E3;
+      font-size: 20px;
+      cursor: pointer;
+  }
+
+  #total {
+      text-align: center;
+  }
+
+  /* .DoughnutChart-container button {
+    margin-left: 100px;
+    width: 60px;
+    height: 20px;
+    border-radius: 15px;
+    outline: none;
+  } */
