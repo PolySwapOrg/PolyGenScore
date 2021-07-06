@@ -23,9 +23,9 @@ for (const [index, value] of result.entries()) {
    styleRules = {background: `url(${Farms})`};
    else if(value.type=="Swap"){
       styleRules = {background: `url(${Swap})`};}
-   else if(value.type=="Liquidity provider"){
+   else if(value.type=="Liquidity provider"  ){
       styleRules = {background: `url(${Lp})`};
-   }else if(value.type=="Lend/borrow"){
+   }else if(value.type=="Lend/borrow" || value.type=="Defi"){
       styleRules = {background: `url(${Defi})`};
    }
  else if(value.type=="Savings"){

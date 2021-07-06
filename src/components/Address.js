@@ -2,7 +2,7 @@ function createData(Id, name, score,type,url) {
   return { Id, name, score,type,url};
 }
 const list = [
-  createData('0x546c79662e028b661dfb4767664d0273184e4dd1', "DMM Kyber",30,"Swap","https://dmm.exchange/"),
+  createData('0x546c79662e028b661dfb4767664d0273184e4dd1', "DMM Kyber",30,"Liquidity provider","https://dmm.exchange/"),
   createData('0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429', "Dfyn",30,"Swap","https://exchange.dfyn.network"),
   createData('0x0769fd68dfb93167989c6f7254cd0d766fb2841f', "Sushi",30,"Swap","https://app.sushi.com"),
   createData('0xbeadf48d62acc944a06eeae0a9054a90e5a7dc97', "Aave",30,"Lend/borrow","https://aave.com"),
