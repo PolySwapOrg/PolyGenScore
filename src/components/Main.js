@@ -39,9 +39,6 @@ function Main (){
 
 
     function apiFetch(acc) {
-      // acc='0x8eDe3d6abeACDC91684BD94F9062568b3eF4753B';
-       // acc='0x22Af2a8B83FDaB462178099F38688048ca4F7eFa';
-       acc='0x6E2F18679b1AEf7D2390830d88dd1F6dc8d66032';
       fetch("https://api.polygonscan.com/api?module=account&action=txlist&address="+acc+"&startblock=1&endblock=99999999&sort=asc&apikey=FU3PWR4G96FC7HAUBU8AMD31RWFRHWCK2")
         .then(res => res.json())
         .then(
