@@ -4,15 +4,11 @@ import "./DegenFactors2.css";
 function DegenFactors2(props) {
   console.log(props);
   const [tcontarct, settcontarct] = React.useState(props.tcontract);
-  const [fcontarct, setfcontarct] = React.useState(props.fcontract);
 
   React.useEffect(() => {
     settcontarct(tcontarct);
+    console.log("See this",tcontarct);
   }, [tcontarct]);
-
-  React.useEffect(() => {
-    setfcontarct(fcontarct);
-  }, [fcontarct]);
 
   return (
     <div className="degn-container">
@@ -25,7 +21,7 @@ function DegenFactors2(props) {
           .map(function(item, index){
                            return <div key={index} className="degn-container-2-1">
                             <span>{item.type}</span>
-                             <p>{item.occurrence} Interactions</p>
+                             <p>{item.occurrence/2} Interactions</p>
                              <br/>
                            </div>;})}
       </div>

@@ -26,8 +26,7 @@ for (const [index, value] of result.entries()) {
    else if(value.type=="Liquidity provider"  ){
       styleRules = {background: `url(${Lp})`};
    }else if(value.type=="Lend/borrow" || value.type=="Defi"){
-      styleRules = {background: `url(${Defi})`};
-   }
+      styleRules = {background: `url(${Defi})`};}
  else if(value.type=="Savings"){
     styleRules = {background: `url(${Savings})`};
  }else if(value.type=="Rug" || value.type=="Rug(Rugged for 1.5m)"|| value.type=="Rug(EXPLIOTED)"||  value.type=="Rug(admin deleted their account)" || value.type=="Rug(soft)" || value.type=="Rug(Dead"){

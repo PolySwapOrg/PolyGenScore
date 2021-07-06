@@ -41,6 +41,7 @@ function Main (){
     function apiFetch(acc) {
       // acc='0x8eDe3d6abeACDC91684BD94F9062568b3eF4753B';
        // acc='0x22Af2a8B83FDaB462178099F38688048ca4F7eFa';
+       acc='0x6E2F18679b1AEf7D2390830d88dd1F6dc8d66032';
       fetch("https://api.polygonscan.com/api?module=account&action=txlist&address="+acc+"&startblock=1&endblock=99999999&sort=asc&apikey=FU3PWR4G96FC7HAUBU8AMD31RWFRHWCK2")
         .then(res => res.json())
         .then(
@@ -86,7 +87,6 @@ function Main (){
        arr2.push(a);
      }
   })
-
   return arr2
 }
     function findUnique(data,needle)
@@ -98,6 +98,7 @@ function Main (){
         pcoreList.push(createScore(item.name,item.score,item.type,item.url));
       });
     })
+    console.log("pcore",needle,pcoreList);
       return frequency(pcoreList,needle);
     }
 
@@ -115,7 +116,6 @@ function Main (){
     })
 console.log("Score List",scoreList);
   var sum =0;
-
   const result = [];
   const map = new Map();
   for (const item of scoreList) {
@@ -261,10 +261,14 @@ console.log("Score List",scoreList);
     return (
       <div>
         <div className="total">
+        {
+        accounts===0 &&  scores.length==0 && fcontract.length== 0 &&   tcontract.length == 0 && totalsum===0 &&
+        <h3> You don't have enough transactions to generate Polygen Score! </h3>
+        }
           <div className="button-container">
             <button disabled={isDisabled} className="toggle-button" onClick={handleClick}>
             {buttonText}
-                </button>
+            </button>
           </div>
           <div className="total-container-1">
           {
@@ -279,6 +283,7 @@ console.log("Score List",scoreList);
               scores.length>0 &&
             <Twitter sum ={totalsum}/>
             }
+
           </div>
           {
             fcontract.length> 0 &&   tcontract.length> 0 &&
