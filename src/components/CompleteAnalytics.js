@@ -5,6 +5,8 @@ import Airdrop from "./airdrop.png";
 import Farms from "./farms.png";
 import Rekt from "./rekt.png";
 import Lp from "./lp.png";
+import Rug from "./rug.png";
+import Savings from "./saving.png";
 import './CompleteAnalytics.css';
 
 function CompleteAnalytics(props) {
@@ -26,6 +28,11 @@ for (const [index, value] of result.entries()) {
    }else if(value.type=="Lend/borrow"){
       styleRules = {background: `url(${Defi})`};
    }
+ else if(value.type=="Savings"){
+    styleRules = {background: `url(${Savings})`};
+ }else if(value.type=="Rug" || value.type=="Rug(Rugged for 1.5m)"|| value.type=="Rug(EXPLIOTED)"||  value.type=="Rug(admin deleted their account)" || value.type=="Rug(soft)" || value.type=="Rug(Dead"){
+    styleRules = {background: `url(${Rug})`};
+ }
     items.push(<div style={styleRules}  key={index} className="Analytics-container-bars"><
     p><span>Contract Interacted : </span>{value.contract}</p>
     <p> <span>Contract Website : </span> <a href={value.website} target="_blank" rel="noopener noreferrer">{value.website}</a></p>
