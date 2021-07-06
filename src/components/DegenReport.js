@@ -1,9 +1,10 @@
 import React from "react";
 import "./DegenReport.css";
 import ArcProgress from 'react-arc-progress';
+import Confetti from 'react-confetti'
+
 
 function DegenReport(props) {
-  console.log("heheh".props);
 
   const [result, setResult] = React.useState(props.sum);
 
@@ -15,10 +16,8 @@ function DegenReport(props) {
     <div>
       <div className="credit-report-container">
         <h3>Polygon Degen Report</h3>
-        <p>{result}</p>
-        {/*<div className="prograssive-bar-container-1">
-          <PrograssiveBar />
-        </div>*/}
+      <Confetti width="600px" height="300px"></Confetti>
+      <p>{result}</p> 
       </div>
     </div>
   );

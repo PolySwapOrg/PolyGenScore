@@ -8,6 +8,7 @@ import CompleteAnalytics from "./CompleteAnalytics";
 import DoughnutChart from "../components/DoughnutChart";
 import Twitter from "../components/Twitter";
 import MetaMaskOnboarding from '@metamask/onboarding'
+
 const ONBOARD_TEXT = 'Click here to install MetaMask!';
 const CONNECT_TEXT = 'Connect Wallet';
 const CONNECTED_TEXT = 'Connected';
