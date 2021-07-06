@@ -1,5 +1,7 @@
 import React from "react";
 import "./DegenFactors.css";
+import { Popup } from 'semantic-ui-react';
+
 
 function DegenFactors(props) {
   console.log(props);
@@ -14,7 +16,7 @@ function DegenFactors(props) {
   }, [fcontarct]);
 
 const mint = (something) => {
-    console.log(something);
+
   }
 
   return (
@@ -30,7 +32,11 @@ const mint = (something) => {
                          return <div key={index} className="credit-container-2-1" onClick={mint(item)}>
                           <span>{item.contract}</span>
                            <p>{item.occurrence} Interactions</p>
-                           <a href="#"><span className="para"> {item.occurrence>=10?"Click here to mint NFT!":""}</span></a>
+                           <Popup
+                                   content="Please comeback soon, We will launch some kickass NFTs to reward you!"
+                                   header="Rewarding your Web3.0 Support!"
+                                   trigger={<div className="div3"><span className="para"> {item.occurrence>=10?"You are Eligible, Click here to mint NFT!":""}</span></div>}
+                                 />
                          </div>;})}
       </div>
     </div>

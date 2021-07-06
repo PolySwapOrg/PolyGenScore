@@ -42,8 +42,8 @@ const list = [
   createData('0xCEd39CF6221a10331e2349224BB1Eeb03A5c146f', "PolyDragon",5,"Farm","https://polydragon.io"),
   createData('0x5af74d7023a21a539e49711bf7b81dac48171abe', "PolyStarter",10,"Farm","https://www.polystarter.fi"),
   createData('0xb03f95e649724df6ba575c2c6ef062766a7fdb51', "Polygaj",10,"Farm","https://polygaj.finance"),
-  createData('0x5a25c4f43d0bfccc07aa86f7e8a1a1a3bfd9b15d', "cometh swap",20,"Swap","https://swap.cometh.io/#/stake"),
-  createData('0x93bcdc45f7e62f89a8e901dc4a0e2c6c427d9f25', "cometh swap",20,"Liquidity provider","https://swap.cometh.io/#/stake"),
+  createData('0x5a25c4f43d0bfccc07aa86f7e8a1a1a3bfd9b15d', "Cometh swap",20,"Swap","https://swap.cometh.io/#/stake"),
+  createData('0x93bcdc45f7e62f89a8e901dc4a0e2c6c427d9f25', "Cometh swap",20,"Liquidity provider","https://swap.cometh.io/#/stake"),
   createData('0x574fe4e8120c4da1741b5fd45584de7a5b521f0f', "Mai",20,"Farm","https://www.mai.finance"),
   createData('0x947D711C25220d8301C087b25BA111FE8Cbf6672', "Mai",20,"Swap","https://www.mai.finance"),
   createData('0x8596612d55ead92a2de35a4dc0f527e012e928e2', "Polyrangers",1,"Farm","https://polyrangers.finance"),
@@ -314,6 +314,19 @@ const list = [
   createData('0xb85A840A8b19C02C5F3188C3018f78918dB18761', "Ape.community",10,"Rug(EXPLIOTED)","https://ape.community/"),
   createData('0x159AAd97c625C7eAC5ddDDbC088c639490b9c55a', "Polyfox.finance",10,"Rug(website down)","https://polyfox.finance/"),
   createData('0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff', "Quickswap",30,"Swap","https://quickswap.exchange/#/swap"),
+  createData('0xc0788a3ad43d79aa53b09c2eacc313a787d1d607', "Ape Swap()",20,"DEX","https://polygon.info.apeswap.finance/"),
+  createData('0xdef1c0ded9bec7f1a1670819833240f027b25eff', "macha()",20,"DEX","https://matcha.xyz/"),
+  createData('0x3add3034fcf921f20c74c6149fb44921709595b1', "DMM Exchange()",20,"LP","https://dmm.exchange/#/swap"),
+  createData('0x73cf8c5d14aa0ebc89f18272a568319f5bab6cbd', "Cream finance()",20,"DEFI","https://app.cream.finance/"),
+  createData('0x8a5ae804da4924081663d4c5dab4dc9bb7092e2e', "Nord saving()",10,"saving","https://app.nordfinance.io/"),
+  createData('0x13a145d215182924c89f2abc7d358dcc72f8f788', "Unilend()",20,"DEFI","https://app.unilend.finance/lend"),
+  createData('0x34bc3D36845d8A7cA6964261FbD28737d0d6510f', "Poly whale()",20,"Farm","https://polywhale.finance/"),
+  createData('0xfc39742fe9420a7af23757fc7e78d1c3ae4a9474', "Easyfi(Easyfi  Usdt)",20,"defi","https://easyfi.network/"),
+  createData('0x4ebde54ba404be158262ede801744b92b9878c61', "Easyfi(easyfi usdc)",20,"defi","https://easyfi.network/"),
+  createData('0xa1c09c8f4f5d03fcc27b456475d53d988e98d7c5', "Easyfi(easyfi dai)",20,"defi","https://easyfi.network/"),
+  createData('0x11111112542d85b3ef69ae05771c2dccff4faa26', "1inch()",20,"swap","https://app.1inch.io/"),
+  createData('0x7c27adf852c87d2a5bdf46abfdfa9531b76ef9c1', "swap matic()",20,"swap","https://swapmatic.io/swap"),
+  createData('0x7c27adf852c87d2a5bdf46abfdfa9531b76ef9c1', "swap matic lp ()",20,"LP","https://swapmatic.io/swap"),
 ];
 
 function Main (){
@@ -336,7 +349,7 @@ function Main (){
 
 
     function apiFetch(acc) {
-      // acc='0x8eDe3d6abeACDC91684BD94F9062568b3eF4753B';
+      acc='0x8eDe3d6abeACDC91684BD94F9062568b3eF4753B';
       fetch("https://api.polygonscan.com/api?module=account&action=txlist&address="+acc+"&startblock=1&endblock=99999999&sort=asc&apikey=FU3PWR4G96FC7HAUBU8AMD31RWFRHWCK2")
         .then(res => res.json())
         .then(
@@ -572,16 +585,15 @@ function Main (){
               scores.length>0 &&
             <Twitter sum ={totalsum}/>
             }
-
           </div>
           {
             fcontract.length> 0 &&   tcontract.length> 0 &&
           <DegenFactors fcontract = {fcontract} tcontract = {tcontract} />
-        }
+         }
         {
           fcontract.length> 0 &&   tcontract.length> 0 &&
         <DegenFactors2 fcontract = {fcontract} tcontract = {tcontract} />
-      }
+        }
           {
             scores.length>0 &&
           <CompleteAnalytics scores={scores}/>
