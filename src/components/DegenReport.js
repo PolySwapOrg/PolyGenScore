@@ -17,7 +17,7 @@ function DegenReport(props) {
       <div className="credit-report-container">
         <h3>Polygon Degen Report</h3>
       <Confetti width="600px" height="300px"></Confetti>
-      <p>{result}</p> 
+      <p>{result}</p>
       </div>
     </div>
   );

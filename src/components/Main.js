@@ -313,8 +313,8 @@ const list = [
   createData('0x1D61ff16F1720d28E61C2AFaC2d3E5488a9e62D5', "Polysnake",10,"Rug(Unverified contract)","https://www.polysnake.finance/"),
   createData('0xb85A840A8b19C02C5F3188C3018f78918dB18761', "Ape.community",10,"Rug(EXPLIOTED)","https://ape.community/"),
   createData('0x159AAd97c625C7eAC5ddDDbC088c639490b9c55a', "Polyfox.finance",10,"Rug(website down)","https://polyfox.finance/"),
+  createData('0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff', "Quickswap",30,"Swap","https://quickswap.exchange/#/swap"),
 ];
-
 
 function Main (){
 
