@@ -48,6 +48,8 @@ function Main (){
             setScores(filterIt(res.result));
             setFContract(findUnique(res.result,"contract"));
             setTContract(findUnique(res.result,"type"));
+            console.log(fcontract);
+            console.log(tcontract);
           },
           // Note: it's important to handle errors here
           // instead of a catch() block so that we don't swallow
@@ -91,7 +93,7 @@ function Main (){
       data.forEach(function (i, index,arr)
     {
       list.forEach((item) => {
-        if(i.to == item.Id)
+        if(i.to == item.Id.toLowerCase())
         pcoreList.push(createScore(item.name,item.score,item.type,item.url));
       });
     })
@@ -151,7 +153,6 @@ console.log("Score List",scoreList);
         else {
           setButtonText(WRONG_CONNECTED_TEXT);
           setDisabled(false);
-
         }
           setNetworkId(chainId);
     });
@@ -283,12 +284,10 @@ console.log("Score List",scoreList);
 
           </div>
           {
-            fcontract.length> 0 &&   tcontract.length> 0 &&
-          <DegenFactors fcontract = {fcontract} tcontract = {tcontract} />
+            fcontract.length> 0 &&   tcontract.length> 0 && <DegenFactors fcontract = {fcontract} tcontract = {tcontract} />
          }
         {
-          fcontract.length> 0 &&   tcontract.length> 0 &&
-        <DegenFactors2 fcontract = {fcontract} tcontract = {tcontract} />
+          fcontract.length> 0 &&   tcontract.length> 0 && <DegenFactors2 fcontract = {fcontract} tcontract = {tcontract} />
         }
           {
             scores.length>0 &&

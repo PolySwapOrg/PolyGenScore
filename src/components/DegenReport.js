@@ -15,7 +15,7 @@ function DegenReport(props) {
   return (
     <div>
       <div className="credit-report-container">
-        <h3>Polygon Degen Score</h3><h6>Powered by PolySwap Labs</h6>
+        <h3>PolyGen Score</h3><h6>Powered by PolySwap Labs</h6>
       <Confetti width="600px" height="300px"></Confetti>
       <p>{result}</p>
       </div>
