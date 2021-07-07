@@ -1,4 +1,4 @@
-# GR10 - Polygen Score for Polygon Network 
+# GR10 - Polygen Score for Polygon Network
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

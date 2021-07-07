@@ -74,7 +74,7 @@ const mint = async(contractAddress) => {
                          return <div key={index} className="credit-container-2-1" >
                          <span>{item.contract}</span>
                            <p>{item.occurrence} Interactions</p>
-                           <div onClick={() => mint(item.contract)}  className="div3"><span  className="para"> {item.occurrence>=5?"You are Eligible, Click here to mint NFT!":""}</span></div>
+                           <div onClick={() => mint(item.contract)}  className="div3"><span  className="para"> {item.occurrence>=10?"You are Eligible, Click here to mint NFT!":""}</span></div>
                            {/**<Popup
                                    content="Please comeback soon, We will launch some kickass NFTs to reward you!"
                                    header="Rewarding your Web3.0 Support!"
