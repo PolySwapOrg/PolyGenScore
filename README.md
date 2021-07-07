@@ -1,4 +1,5 @@
 # GR10 - Polygen Score for Polygon Network
+
 ### Degen and Proof of Experience project 
 
 It made more sense to us to integrate Degen and Proof of Experience together inorder to enhance hodlers learning curve and improve loyalty on the Polygon network for a protocol by rewarding them with Tokens, NFTS.
@@ -27,6 +28,7 @@ cd project
 npm install
 npm start
 ```
+[Video demo of the project](https://www.youtube.com/watch?v=IijtdpAtOt0)
 
 ## License
 
