@@ -1,40 +1,35 @@
 # GR10 - Polygen Score for Polygon Network
+### Degen and Proof of Experience project 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It made more sense to us to integrate Degen and Proof of Experience together inorder to enhance hodlers learning curve and improve loyalty on the Polygon network for a protocol by rewarding them with Tokens, NFTS.
 
-## Available Scripts
+Things we have accompished in this project :
 
-In the project directory, you can run:
+### Degen :
+- Generate PolyGen score by evaluating Interactions on  more than 300+ Smart Contracts.
+- We have categorized each smart contract as - SWAP, LEND/BORROW Protocol (DeFi), FARMS, RUG, LIQUIDITY PROVIDER.
+- Based on the current TVL (Total Value Locked) on each smart contract, we have assigned points to each Smart contract.
 
-### `npm start`
+ ### Proof of Experience :
+- We have calculated number of Interactions made to each Smart Contract, if certain thresholf number of Interactions achieved - They can mint a NFT.
+- We have created a sample of 13 NFTS for the projects that has higher TVL and hosted them on IPFS (InterPlanetary File System). 
+- Deployed a ERC 721 Smart Contract that handles non tranferable NFT minting. 
+- We made NFT non tranferable as these NFTs or Proof are experience can only be earned but never bought ;>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Steps to Run 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Requires [Node.js](https://nodejs.org/) to run.
 
-### `npm test`
+Install the dependencies and devDependencies and start the server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+cd project
+npm install
+npm start
+```
 
-### `npm run build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+MIT
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Free Software, Hell Yeah!**
