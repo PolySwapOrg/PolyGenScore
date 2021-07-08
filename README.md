@@ -17,6 +17,10 @@ Things we have accompished in this project :
 - Deployed a ERC 721 Smart Contract that handles non tranferable NFT minting. 
 - We made NFT non tranferable as these NFTs or Proof are experience can only be earned but never bought ;>
 
+## Check out our cool NFT 
+
+![Imgur Image](https://opensea.io/assets/matic/0x0cf4e2948ba0253754288efcd458d980ad7b299e/4)
+
 ## Steps to Run 
 
 Requires [Node.js](https://nodejs.org/) to run.
