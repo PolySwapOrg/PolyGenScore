@@ -19,7 +19,7 @@ Things we have accompished in this project :
 
 ## Check out our cool NFT 
 
-![Imgur Image](https://opensea.io/assets/matic/0x0cf4e2948ba0253754288efcd458d980ad7b299e/4)
+![POlyGen NFT](https://ipfs.io/ipfs/QmRzs15WPqSVBNHRGx7ZhStxk1Bo6VPNo6Vfo4Hrxun7HT?filename=dfyn.png)
 
 ## Steps to Run 
 
