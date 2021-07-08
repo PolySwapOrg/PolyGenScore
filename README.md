@@ -28,7 +28,7 @@ cd project
 npm install
 npm start
 ```
-[Video demo of the project](https://youtu.be/fk2sYAsyPoI)
+[Video demo of the project](https://youtu.be/AM4_IERJ_Hg)
 
 ## License
 
