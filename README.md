@@ -2,6 +2,7 @@
 
 ### Degen and Proof of Experience project 
 
+### [Website](https://ethereum.org/en/contributing/translation-program/)
 It made more sense to us to integrate Degen and Proof of Experience together inorder to enhance hodlers learning curve and improve loyalty on the Polygon network for a protocol by rewarding them with Tokens, NFTS.
 
 Things we have accompished in this project :
