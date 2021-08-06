@@ -39,10 +39,11 @@ function Main (){
 
 
     function apiFetch(acc) {
-      fetch("https://api.polygonscan.com/api?module=account&action=txlist&address="+acc+"&startblock=1&endblock=99999999&sort=asc&apikey=FU3PWR4G96FC7HAUBU8AMD31RWFRHWCK2")
+      fetch("https://api.polygonscan.com/api?module=account&action=txlist&address="+acc+"&startblock=1&endblock=99999999&sort=asc&apikey=4B1FAEPZDKTVM71DE5JQDJY96AE3F8DFPR")
         .then(res => res.json())
         .then(
           (res) => {
+            console.log(res);
             setIsLoaded(true);
             setItems(res.result);
             setScores(filterIt(res.result));
@@ -103,7 +104,7 @@ function Main (){
 
     function filterIt(data)
     {
-
+console.log(data);
       data.forEach(function (i, index,arr)
     {
       list.forEach((item) => {
